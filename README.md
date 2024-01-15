@@ -18,6 +18,11 @@ Executable modelling is a powerful tool to capture the dynamic behaviour of netw
 
 In this course, basic and advanced concepts of mechanistic computational modelling, ranging from pathway models to medical digital twins, will be covered through lectures, keynotes, hands on sessions and project based activities. The participants will be strongly supported to develop from theory to application throughout the week of the course.  The course will also briefly cover the use of omic datasets to either build/ infer models or compare the model’s predictions against gene and protein states found in biological samples. However, applicants should note that this is not a course on data analysis and integration. 
 
+## Lead Instructors
+
+- [Anna Niarakis](https://orcid.org/0000-0002-9687-7426), Université de Toulouse III - Paul Sabatier, Center of Integrative Biology, France
+- [Ben Hall](https://profiles.ucl.ac.uk/33570-benjamin-hall), University College London, UK
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
