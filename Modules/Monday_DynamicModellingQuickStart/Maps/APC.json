@@ -1,0 +1,299 @@
+{
+    "Model": {
+        "Name": "CaSQ-BMA",
+        "Variables": [
+            {
+                "Name": "APC",
+                "Id": 1,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            },
+            {
+                "Name": "CTNNB1",
+                "Id": 2,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(1-var(1),(min(var(10),1)))),1)),0))"
+            },
+            {
+                "Name": "SMAD7",
+                "Id": 3,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(var(2),1)),1)),0))"
+            },
+            {
+                "Name": "BMPR1B",
+                "Id": 4,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(var(3),1)),1)),0))"
+            },
+            {
+                "Name": "CREBBP",
+                "Id": 5,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(var(2),1)),1)),0))"
+            },
+            {
+                "Name": "JUN",
+                "Id": 6,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(var(5),1)),1)),0))"
+            },
+            {
+                "Name": "C3",
+                "Id": 7,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(var(6),1)),1)),0))"
+            },
+            {
+                "Name": "CREB1",
+                "Id": 8,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(var(5),1)),1)),0))"
+            },
+            {
+                "Name": "PTPRZ1",
+                "Id": 9,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "(max((min((min(1-var(8),(min(var(11),1)))),1)),0))"
+            },
+            {
+                "Name": "CTNNB1__inactive_",
+                "Id": 10,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            },
+            {
+                "Name": "PTPRZ1__inactive_",
+                "Id": 11,
+                "RangeFrom": 0,
+                "RangeTo": 1,
+                "Formula": "1"
+            }
+        ],
+        "Relationships": [
+            {
+                "ToVariable": 2,
+                "Type": "Activator",
+                "FromVariable": 10,
+                "Id": 12
+            },
+            {
+                "ToVariable": 2,
+                "Type": "Inhibitor",
+                "FromVariable": 1,
+                "Id": 13
+            },
+            {
+                "ToVariable": 3,
+                "Type": "Activator",
+                "FromVariable": 2,
+                "Id": 14
+            },
+            {
+                "ToVariable": 4,
+                "Type": "Activator",
+                "FromVariable": 3,
+                "Id": 15
+            },
+            {
+                "ToVariable": 5,
+                "Type": "Activator",
+                "FromVariable": 2,
+                "Id": 16
+            },
+            {
+                "ToVariable": 6,
+                "Type": "Activator",
+                "FromVariable": 5,
+                "Id": 17
+            },
+            {
+                "ToVariable": 7,
+                "Type": "Activator",
+                "FromVariable": 6,
+                "Id": 18
+            },
+            {
+                "ToVariable": 8,
+                "Type": "Activator",
+                "FromVariable": 5,
+                "Id": 19
+            },
+            {
+                "ToVariable": 9,
+                "Type": "Activator",
+                "FromVariable": 11,
+                "Id": 20
+            },
+            {
+                "ToVariable": 9,
+                "Type": "Inhibitor",
+                "FromVariable": 8,
+                "Id": 21
+            }
+        ]
+    },
+    "Layout": {
+        "Variables": [
+            {
+                "Id": 1,
+                "Name": "APC",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 58.0,
+                "PositionY": 46.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 2,
+                "Name": "CTNNB1",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 132.0,
+                "PositionY": 110.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 3,
+                "Name": "SMAD7",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 80.0,
+                "PositionY": 179.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 4,
+                "Name": "BMPR1B",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 37.0,
+                "PositionY": 264.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 5,
+                "Name": "CREBBP",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 204.0,
+                "PositionY": 179.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 6,
+                "Name": "JUN",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 176.0,
+                "PositionY": 260.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 7,
+                "Name": "C3",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 156.0,
+                "PositionY": 334.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 8,
+                "Name": "CREB1",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 301.0,
+                "PositionY": 255.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 9,
+                "Name": "PTPRZ1",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 407.0,
+                "PositionY": 333.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 10,
+                "Name": "CTNNB1__inactive_",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 0.0,
+                "PositionY": 110.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            },
+            {
+                "Id": 11,
+                "Name": "PTPRZ1__inactive_",
+                "Type": "Constant",
+                "ContainerId": 0,
+                "PositionX": 278.0,
+                "PositionY": 328.0,
+                "CellY": 0,
+                "CellX": 0,
+                "Angle": 0,
+                "Description": "default_compartment",
+                "Fill": "#ff66cc"
+            }
+        ],
+        "Containers": [],
+        "Description": ""
+    },
+    "ltl": {
+        "states": [],
+        "operations": []
+    }
+}
