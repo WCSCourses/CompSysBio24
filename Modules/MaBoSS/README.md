@@ -23,6 +23,6 @@ A brief description of library, as well as the different exercises are available
 
 To load the notebook, run : 
 ```
-   cd ~/manual/Modules/MaBoss
+   cd ~/CompSysBio24/Modules/MaBoSS
    colomoto-docker -V next --bind . 
 ```
